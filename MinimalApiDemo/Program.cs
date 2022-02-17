@@ -1,4 +1,5 @@
 using DataAccess.DbAccess;
+using MinimalApiDemo;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,5 +20,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.ConfigureApi();
 
 app.Run();
