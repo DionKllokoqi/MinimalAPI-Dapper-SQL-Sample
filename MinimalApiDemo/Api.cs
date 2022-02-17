@@ -6,7 +6,7 @@ public static class Api
     {
         // All of API endpoint mapping
         app.MapGet("/Users", GetUsers);
-        app.MapGet("/Users/{Id}", GetUser);
+        app.MapGet("/Users/{id}", GetUser);
         app.MapPost("/Users", InsertUser);
         app.MapPut("/Users", UpdateUser);
         app.MapDelete("/Users", DeleteUser);
